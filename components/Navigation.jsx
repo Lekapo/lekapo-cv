@@ -1,5 +1,5 @@
 /**
-Renders a navigation component with a sticky header, containing a logo and a link to take a quiz.
+Renders a navigation component with a sticky header, containing a logo and a link to other pages.
 @component
 @returns {JSX.Element} The rendered navigation component.
 */
@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export const Navigation = () => {
   return (
-    <div  className="m-auto w-full sticky top-0 border-black border-b-2 z-50">
+    <div  className="m-auto w-full sticky top-0 border-black border-b-2 z-50 bg-white">
       <nav  className="container mx-auto flex">
         <div id='navbrand' className="navbrand p-5 m-auto">
           <Link href="/">
