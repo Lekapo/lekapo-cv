@@ -132,6 +132,82 @@
   font-display: swap;
 }
 
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --brutal-blue-rbg: 51, 0, 255;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    //transform: translateY(100%);
+    scale: 0;
+    opacity: 0;
+  }
+  100% {
+    //transform: translateY(0);
+    scale: 1;
+    opcaity: 1;
+  }
+}
+
+#hero {
+  
+  animation: 0.75s ease 0s 1 slideInFromBottom;
+}
+
+button {
+  padding: 8px 16px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0px black;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 800;
+  transition: .3s filter, transform .3s, box-shadow .3s;
+  position: relative;
+}
+
+button div {
+  transition: .3s filter, transform .3s, box-shadow .3s, .3s background-color;
+}
+
+ button:hover div {
+  filter: brightness(85%);
+}
+
+
+button .button-bg {
+  position: absolute;
+  left:0;
+  width: 100%;
+  height: 100%;
+  top:0;
+  transition: .3s filter;
+  
+}
+
+button span {
+  position: relative;
+  z-index: 1;
+}
+
+
+button:active, input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active {
+  box-shadow: none;
+  transform: translate(2px,2px);
+}
+
+button.active { 
+  box-shadow: none;
+  transform: translate(2px,2px);
+  color: rgb(var(--foreground-rgb));
+}
+
+button.active div {
+  filter: brightness(85%);
+  background-color: rgb(var(--brutal-blue-rbg));
+}
+
+
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
