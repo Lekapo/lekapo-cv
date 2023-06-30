@@ -9,7 +9,13 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Mabry pro', 'sans-serif']
-      }
+      },
+      boxShadow: {
+        'brutal-x': '5px 5px 0px rgba(0, 0, 0)'
+      },
+      colors: {
+        'brutal-blue': '#3300ee'
+      },
     },
   },
   plugins: [],
