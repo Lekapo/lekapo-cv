@@ -9,7 +9,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 
 
-export const Navigation = () => {
+export function Navigation() {
   
 {/* Get the current route */}
 const currentRoute = usePathname();

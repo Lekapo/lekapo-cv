@@ -1,2 +1,2 @@
 export { Navigation } from './Navigation'
-export { Hero } from './Hero'
+export { Container } from './Container'

@@ -14,7 +14,8 @@ module.exports = {
         'brutal-x': '5px 5px 0px rgba(0, 0, 0)'
       },
       colors: {
-        'brutal-blue': '#3300ee'
+        'brutal-blue': '#3300ee',
+
       },
     },
   },

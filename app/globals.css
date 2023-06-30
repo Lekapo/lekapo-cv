@@ -134,7 +134,7 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --brutal-blue-rbg: 51, 0, 255;
+  --brutal-blue-rgb: 51, 0, 255;
 }
 
 @keyframes slideInFromBottom {
@@ -150,7 +150,7 @@
   }
 }
 
-#hero {
+#hero, #about, #contact {
   
   animation: 0.75s ease 0s 1 slideInFromBottom;
 }
@@ -170,10 +170,10 @@ button div {
   transition: .3s filter, transform .3s, box-shadow .3s, .3s background-color;
 }
 
- button:hover div {
-  filter: brightness(85%);
+ button:hover .button-bg {
+  filter: brightness(95%);
+  
 }
-
 
 button .button-bg {
   position: absolute;
@@ -193,19 +193,19 @@ button span {
 
 button:active, input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active {
   box-shadow: none;
-  transform: translate(2px,2px);
+  transform: translate(2px,2px);  
 }
 
-button.active { 
+button.active {
   box-shadow: none;
   transform: translate(2px,2px);
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
 }
 
 button.active div {
-  filter: brightness(85%);
-  background-color: rgb(var(--brutal-blue-rbg));
+  /* background-color: rgb(var(--brutal-blue-rgb)); */
 }
+
 
 
 
