@@ -137,6 +137,7 @@
   --brutal-blue-rgb: 51, 0, 255;
 }
 
+
 @keyframes slideInFromBottom {
   0% {
     //transform: translateY(100%);
@@ -164,6 +165,7 @@ button {
   font-weight: 800;
   transition: .3s filter, transform .3s, box-shadow .3s;
   position: relative;
+  font-size: 1.2rem;
 }
 
 button div {
@@ -199,11 +201,11 @@ button:active, input[type="button"]:active, input[type="submit"]:active, input[t
 button.active {
   box-shadow: none;
   transform: translate(2px,2px);
-  /* color: rgb(var(--foreground-rgb)); */
+  color: rgb(var(--foreground-rgb));
 }
 
 button.active div {
-  /* background-color: rgb(var(--brutal-blue-rgb)); */
+  background-color: rgb(var(--brutal-blue-rgb));
 }
 
 

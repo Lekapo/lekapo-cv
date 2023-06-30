@@ -3,13 +3,13 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <>
+    <div>
       <div id='hero' className='container m-auto my-10'>
         <Container height={"min-h-[50vh]"} width={"w-7/8"} title={"Web Developer"}>
           <div className="px-20">
-            <h2 className="uppercase text-5xl mt-16 ">RONALDO ROSA JUNIOR</h2>
+            <h2 className="uppercase text-5xl mt-16 font-bold">RONALDO ROSA JUNIOR</h2>
             <h3 className="text-sm italic mt-1">Web Developer Full Stack - HTML/CSS - Javascript - ReactJS - React Native - NodeJS</h3>
-            <p className="mt-10 text-2xl">Especializado em desenvolvimento web e móvel com anos de experiência criando websites e aplicações em diversas tecnologias.</p>
+            <p className="mt-10 text-3xl font-medium">Especializado em desenvolvimento web e móvel com anos de experiência criando websites e aplicações em diversas tecnologias.</p>
             <div id="hero-buttons" className="flex justify-center mt-10">
               <Link href="/about">
                 <button className="text-black bg-black">
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </Container>
       </div>
-    </>
+    </div>
     
   )
 }

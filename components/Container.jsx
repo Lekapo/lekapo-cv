@@ -28,11 +28,11 @@ export function Container({children,
                 w-100
                 border-black
                 border-b-2
-                bg-black
+                bg-brutal-blue
                 text-white
             ">
             <h1 className="font-bold pl-3">{title}</h1>
-            <span className="ml-auto font-bold pr-3 text-[20px]">x</span>
+            <span className="ml-auto font-bold pr-3 text-[22px] leading-none pb-1">x</span>
             </div>
             
             <div id="container-content" className="text-center py-10 lg:px-20 px-2 m-auto">
