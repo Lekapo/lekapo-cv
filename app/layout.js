@@ -1,10 +1,15 @@
 import './globals.css'
-import { Darker_Grotesque } from 'next/font/google'
+import { Darker_Grotesque, VT323 } from 'next/font/google'
 import { Navigation} from '@/components'
 
 const darkerGrotesque = Darker_Grotesque({ 
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800', '900']
+})
+
+const vt323 = VT323({ 
+  subsets: ['latin'],
+  weight: ['400']
 })
 
 export const metadata = {
@@ -15,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={darkerGrotesque.className}>
-      <body class="bg-white dark:bg-black dark:text-white">
+      <body class="bg-orangeyellow dark:bg-black dark:text-white">
         <Navigation/>
         {children}
         </body>
