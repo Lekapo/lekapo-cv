@@ -33,8 +33,8 @@ export function Navigation() {
 
   return (
     <div  className="sticky top-0 border-black z-50 border-b-4 bg-blackcoffe">
-      <nav  className="flex container mx-auto">
-        <div id='navbrand' className="navbrand p-5">
+      <nav  className="flex container mx-auto p-5">
+        <div id='navbrand' className="navbrand">
           <Link href="/">
             <h1 className={`uppercase text-5xl text-spanishyellow ${vt323.className}`}>Lekapo</h1>
           </Link>
@@ -44,9 +44,12 @@ export function Navigation() {
           id="nav-menu"
           className="md:hidden ml-auto flex"
         >
-          <div></div>
-          <div></div>
-          <div></div>
+        <div id="menu" className={`${navActive ? 'active' : ''} `}>
+          
+          <div className="top-[33%]"></div>
+          <div className="top-[48%]"></div>
+          <div className="top-[63%]"></div>
+        </div>
         </div>
         <div id='navbar' className={`ml-auto ${navActive ? 'active' : ''} `}>
           <div className="text-xl p-10 nav-menu flex flex-col items-center gap-y-4 md:p-0 md:gap-0 md:flex-row md:gap-x-5">
